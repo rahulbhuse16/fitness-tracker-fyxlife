@@ -52,8 +52,8 @@ const Welcome = ({ navigation }: any) => {
       >
         {/* Hero Section */}
         <View style={styles.hero}>
-          <Dumbbell size={64} color="#fff" style={styles.icon} />
-          <Text style={styles.title}>Track Your Fitness</Text>
+          <Image  source={require('../assets/fyxlife.png')} height={64} width={64}  style={styles.icon} />
+          <Text style={styles.title}>Welcome To FyxLife</Text>
           <Text style={styles.subtitle}>
             Stay motivated, reach your goals, and live healthier with us.
           </Text>
@@ -135,7 +135,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   icon: {
-    marginBottom: 20,
+    height:104,
+    width:164,
+    resizeMode:"contain"
   },
   title: {
     fontSize: 36,
@@ -203,7 +205,7 @@ const styles = StyleSheet.create({
   cta: {
     alignItems: 'center',
     marginBottom: 60,
-    marginTop: 40,
+    marginTop: 20,
   },
   button: {
     width: width * 0.7,
